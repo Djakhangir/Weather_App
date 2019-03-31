@@ -1,0 +1,31 @@
+
+
+.wrap{
+    background: linear-gradient(rgb(104, 198, 235), rgb(228, 121, 72));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+.back__button_add {
+    position: absolute;
+    top: 2rem;
+    left: 2.25rem;
+    width: 5rem;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.background-gradient_circle_Add {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    height: 120%;
+}
+

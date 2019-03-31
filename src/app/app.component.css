@@ -2,12 +2,21 @@
 .root__container {
     width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template-columns: auto;
+    display: inline-grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 0.5fr auto;
     position: relative;
   }
-  
+
+.search-text{
+  display: grid;
+  grid-gap: 100px;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+} 
+
+
   /*
   ================
       Header
@@ -228,7 +237,7 @@
   }
   
   /*SVGs*/
-  .hamburger__icon {
+  .hamburger__icon{
     position: relative;
     z-index: 35;
     height: 1rem;
@@ -246,17 +255,18 @@
     fill: #2B244D;
   }
   
-  .logo__text-dark {
+.logo__text-dark {
     fill: #ffff;
-  }
+}
   
-  .hamburger__icon__fill {
+.hamburger__icon__fill {
     fill: #2B244D;
-  }
+}
   
-  .hamburger__icon__fill-dark {
-    fill: #ffff;
-  }
+.hamburger__icon__fill-dark {
+  fill: rgb(255, 255, 255);
+  
+}
   
   /*
   ================
@@ -265,8 +275,8 @@
   */
   
   .main-container__bg {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -279,9 +289,11 @@
   .main-container__bg-dark {
     opacity: 1;
     background: linear-gradient(to bottom, #B290FF, #2E1D65);
-    transition: opacity 300ms linear;
+    transition: opacity 300ms linear; 
   }
   
+  
+
   /*
   ================-
       Footer

@@ -4,9 +4,9 @@ Weather Card Styling
 ====================
 */
 .weather__card {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
     justify-items: center;
     padding: 2rem;
@@ -22,6 +22,16 @@ Weather Card Styling
   .weather__card-dark {
     background: linear-gradient(to bottom, #711B86, #00057A);
     color: white;
+  }
+
+  .weather__card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+  
+  .weather__card-dark:hover {
+    top: -40px;
+    box-shadow: 0 4px 5px rgba(121, 119, 119, 0.479);
   }
   
   .city-name__text {

@@ -28,7 +28,8 @@
             <svg (click)="toggleMenu()" class="hamburger__icon" id="Menu_Burger_Icon"  data-name="Menu Burger Icon"
             viewBox="31.5 30 49.9 32">
            <defs>
-               <style>.hamburger__icon__fill {
+               <style class="hamburger__icon__fill">
+                   .hamburger__icon__fill{
                    fill: #594e78
                }</style>
            </defs>
@@ -39,6 +40,7 @@
            <rect id="Rectangle_11" width="49.9" height="4"  class="hamburger__icon__fill" data-name="Rectangle 11" rx="2"
                  transform="translate(31.5 30)"/>
        </svg>
+       
                           <!-- logo svg code goes here-->
               <svg class="logo__icon" viewBox="150.3 22.2 213.7 42.8">
                   <path fill="purple" d="M150.3 65V22.2L193 65z" data-name="Path 1"/>
@@ -54,7 +56,6 @@
           </div>
   
           <h3 class="date__text">Today</h3>
-  
   
           <div class="mode-toggle__container">
               <span class="mode-toggle__text">Light</span>
@@ -75,8 +76,11 @@
   
       <!--<router-outlet></router-outlet>-->
       <main class="main__container">
-          <div class="main-container__bg" [ngClass]="{'main-container__bg-dark': darkModeActive}"></div>
-          <router-outlet></router-outlet>
+          <div class="main-container__bg" [ngClass]="{'main-container__bg-dark': darkModeActive}">
+                
+            </div>
+            <router-outlet></router-outlet>
+          
       </main>
   
       <!-- Footer -->

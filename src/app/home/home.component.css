@@ -1,9 +1,10 @@
 /*Home Layout*/
 .main__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(auto-fill, 1fr);
     align-items: center;
     justify-items: center;
-    height: 100%;
-  }
+    height: 100vh;
+}
+
